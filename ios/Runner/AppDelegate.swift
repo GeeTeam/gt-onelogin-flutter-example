@@ -32,11 +32,13 @@ import OneLoginSDK
         }
     })
     
+    let superResult: Bool = super.application(application, didFinishLaunchingWithOptions: launchOptions)
+    
     OneLogin.preGetToken { ([AnyHashable : Any]) in
         
     }
     
-    return super.application(application, didFinishLaunchingWithOptions: launchOptions)
+    return superResult
   }
     
     func normalLogin(controller: UIViewController, result: @escaping FlutterResult) {

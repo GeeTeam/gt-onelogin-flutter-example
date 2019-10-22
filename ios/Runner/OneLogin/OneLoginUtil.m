@@ -8,6 +8,7 @@
 
 #import "OneLoginUtil.h"
 #import <OneLoginSDK/OneLoginSDK.h>
+#import "OneLoginProgressHUD.h"
 
 @interface OneLoginUtil () <OneLoginDelegate>
 
@@ -215,7 +216,9 @@
     
     __weak typeof(self) wself = self;
     if ([self needPreGetToken]) {
+        [OneLoginProgressHUD showLoadingHUDWithMessage:nil];
         [OneLogin preGetTokenWithCompletion:^(NSDictionary * _Nonnull preResult) {
+            [OneLoginProgressHUD hideAllHUD];
             NSLog(@"preGetTokenWithCompletion result: %@", preResult);
             if (preResult.count > 0 && preResult[@"status"] && 200 == [preResult[@"status"] integerValue]) {
                 [OneLogin requestTokenWithViewController:controller viewModel:viewModel completion:^(NSDictionary * _Nullable result) {
@@ -257,7 +260,9 @@
     
     __weak typeof(self) wself = self;
     if ([self needPreGetToken]) {
+        [OneLoginProgressHUD showLoadingHUDWithMessage:nil];
         [OneLogin preGetTokenWithCompletion:^(NSDictionary * _Nonnull preResult) {
+            [OneLoginProgressHUD hideAllHUD];
             NSLog(@"preGetTokenWithCompletion result: %@", preResult);
             if (preResult.count > 0 && preResult[@"status"] && 200 == [preResult[@"status"] integerValue]) {
                 [OneLogin requestTokenWithViewController:controller viewModel:viewModel completion:^(NSDictionary * _Nullable result) {
@@ -320,7 +325,9 @@
     
     __weak typeof(self) wself = self;
     if ([self needPreGetToken]) {
+        [OneLoginProgressHUD showLoadingHUDWithMessage:nil];
         [OneLogin preGetTokenWithCompletion:^(NSDictionary * _Nonnull preResult) {
+            [OneLoginProgressHUD hideAllHUD];
             NSLog(@"preGetTokenWithCompletion result: %@", preResult);
             if (preResult.count > 0 && preResult[@"status"] && 200 == [preResult[@"status"] integerValue]) {
                 [OneLogin requestTokenWithViewController:controller viewModel:viewModel completion:^(NSDictionary * _Nullable result) {
@@ -348,7 +355,9 @@
     
     __weak typeof(self) wself = self;
     if ([self needPreGetToken]) {
+        [OneLoginProgressHUD showLoadingHUDWithMessage:nil];
         [OneLogin preGetTokenWithCompletion:^(NSDictionary * _Nonnull preResult) {
+            [OneLoginProgressHUD hideAllHUD];
             NSLog(@"preGetTokenWithCompletion result: %@", preResult);
             if (preResult.count > 0 && preResult[@"status"] && 200 == [preResult[@"status"] integerValue]) {
                 [OneLogin requestTokenWithViewController:controller viewModel:viewModel completion:^(NSDictionary * _Nullable result) {

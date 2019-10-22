@@ -18,6 +18,11 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		E96744D2235EBE3D00CDCBAA /* OneLoginProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E96744CB235EBE3C00CDCBAA /* OneLoginProgressHUD.m */; };
+		E96744D3235EBE3D00CDCBAA /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = E96744CD235EBE3C00CDCBAA /* MBProgressHUD.m */; };
+		E96744D4235EBE3D00CDCBAA /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E96744CE235EBE3C00CDCBAA /* LICENSE */; };
+		E96744D5235EBE3D00CDCBAA /* README.mdown in Resources */ = {isa = PBXBuildFile; fileRef = E96744D0235EBE3C00CDCBAA /* README.mdown */; };
+		E96744D6235EBE3D00CDCBAA /* OneLoginUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E96744D1235EBE3C00CDCBAA /* OneLoginUtil.m */; };
 		E98A3E83235D9D7500D32705 /* libz.1.2.8.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E98A3E82235D9D7500D32705 /* libz.1.2.8.tbd */; };
 		E98A3E85235D9DA000D32705 /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E98A3E84235D9DA000D32705 /* libc++.1.tbd */; };
 		E98A3E8D235D9EBE00D32705 /* TYRZResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E98A3E87235D9EBE00D32705 /* TYRZResource.bundle */; };
@@ -26,7 +31,6 @@
 		E98A3E90235D9EBE00D32705 /* account_login_sdk_noui_core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98A3E8A235D9EBE00D32705 /* account_login_sdk_noui_core.framework */; };
 		E98A3E91235D9EBE00D32705 /* EAccountApiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E98A3E8B235D9EBE00D32705 /* EAccountApiSDK.framework */; };
 		E98A3E92235D9EBE00D32705 /* OneLoginResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E98A3E8C235D9EBE00D32705 /* OneLoginResource.bundle */; };
-		E98A3E95235DA29C00D32705 /* OneLoginUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E98A3E94235DA29C00D32705 /* OneLoginUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,6 +64,14 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96744C9235EBE3C00CDCBAA /* OneLoginProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneLoginProgressHUD.h; sourceTree = "<group>"; };
+		E96744CA235EBE3C00CDCBAA /* OneLoginUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OneLoginUtil.h; sourceTree = "<group>"; };
+		E96744CB235EBE3C00CDCBAA /* OneLoginProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneLoginProgressHUD.m; sourceTree = "<group>"; };
+		E96744CD235EBE3C00CDCBAA /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		E96744CE235EBE3C00CDCBAA /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E96744CF235EBE3C00CDCBAA /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		E96744D0235EBE3C00CDCBAA /* README.mdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.mdown; sourceTree = "<group>"; };
+		E96744D1235EBE3C00CDCBAA /* OneLoginUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OneLoginUtil.m; sourceTree = "<group>"; };
 		E98A3E82235D9D7500D32705 /* libz.1.2.8.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.8.tbd; path = usr/lib/libz.1.2.8.tbd; sourceTree = SDKROOT; };
 		E98A3E84235D9DA000D32705 /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
 		E98A3E87235D9EBE00D32705 /* TYRZResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TYRZResource.bundle; sourceTree = "<group>"; };
@@ -68,8 +80,6 @@
 		E98A3E8A235D9EBE00D32705 /* account_login_sdk_noui_core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = account_login_sdk_noui_core.framework; sourceTree = "<group>"; };
 		E98A3E8B235D9EBE00D32705 /* EAccountApiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EAccountApiSDK.framework; sourceTree = "<group>"; };
 		E98A3E8C235D9EBE00D32705 /* OneLoginResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OneLoginResource.bundle; sourceTree = "<group>"; };
-		E98A3E93235DA29C00D32705 /* OneLoginUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneLoginUtil.h; sourceTree = "<group>"; };
-		E98A3E94235DA29C00D32705 /* OneLoginUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneLoginUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +135,7 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				E96744C8235EBE3C00CDCBAA /* OneLogin */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -134,8 +145,6 @@
 				1498D2331E8E89220040F4C2 /* GeneratedPluginRegistrant.m */,
 				74858FAE1ED2DC5600515810 /* AppDelegate.swift */,
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
-				E98A3E93235DA29C00D32705 /* OneLoginUtil.h */,
-				E98A3E94235DA29C00D32705 /* OneLoginUtil.m */,
 			);
 			path = Runner;
 			sourceTree = "<group>";
@@ -145,6 +154,29 @@
 			children = (
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E96744C8235EBE3C00CDCBAA /* OneLogin */ = {
+			isa = PBXGroup;
+			children = (
+				E96744CC235EBE3C00CDCBAA /* MBProgressHUD */,
+				E96744C9235EBE3C00CDCBAA /* OneLoginProgressHUD.h */,
+				E96744CB235EBE3C00CDCBAA /* OneLoginProgressHUD.m */,
+				E96744CA235EBE3C00CDCBAA /* OneLoginUtil.h */,
+				E96744D1235EBE3C00CDCBAA /* OneLoginUtil.m */,
+			);
+			path = OneLogin;
+			sourceTree = "<group>";
+		};
+		E96744CC235EBE3C00CDCBAA /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				E96744CD235EBE3C00CDCBAA /* MBProgressHUD.m */,
+				E96744CE235EBE3C00CDCBAA /* LICENSE */,
+				E96744CF235EBE3C00CDCBAA /* MBProgressHUD.h */,
+				E96744D0235EBE3C00CDCBAA /* README.mdown */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		E98A3E81235D9D6E00D32705 /* Frameworks */ = {
@@ -233,8 +265,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96744D5235EBE3D00CDCBAA /* README.mdown in Resources */,
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
+				E96744D4235EBE3D00CDCBAA /* LICENSE in Resources */,
 				9740EEB41CF90195004384FC /* Debug.xcconfig in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
 				E98A3E8D235D9EBE00D32705 /* TYRZResource.bundle in Resources */,
@@ -281,7 +315,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E98A3E95235DA29C00D32705 /* OneLoginUtil.m in Sources */,
+				E96744D6235EBE3D00CDCBAA /* OneLoginUtil.m in Sources */,
+				E96744D2235EBE3D00CDCBAA /* OneLoginProgressHUD.m in Sources */,
+				E96744D3235EBE3D00CDCBAA /* MBProgressHUD.m in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
 			);
