@@ -37,19 +37,5 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <!-- oneLogin -->
-        <activity
-            android:name="com.geetest.onelogin.activity.OneLoginActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:launchMode="singleTop"
-            android:screenOrientation="behind"
-            android:theme="@style/Theme.ActivityDialogStyle" />
-        <!-- oneLogin Web-->
-        <activity
-            android:name="com.geetest.onelogin.activity.OneLoginWebActivity"
-            android:configChanges="orientation|keyboardHidden|screenSize"
-            android:launchMode="singleTop"
-            android:screenOrientation="behind"
-            android:theme="@style/Theme.ActivityDialogStyle" />
     </application>
 </manifest>

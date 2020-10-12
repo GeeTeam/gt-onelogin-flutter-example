@@ -117,11 +117,11 @@ class CustomButtonList extends StatefulWidget {
   }
 }
 
-const MethodChannel iOSOneLoginChannel = const MethodChannel('com.geetest.onelogin/onelogin');
+const MethodChannel oneLoginChannel = const MethodChannel('com.geetest.onelogin/onelogin');
 
 Future<String> oneLogin(int tag) async {
     try {
-      return await iOSOneLoginChannel.invokeMethod('oneLogin', tag);
+      return await oneLoginChannel.invokeMethod('oneLogin', tag);
     } on PlatformException catch (e) {
       print('PlatformException' + e.message);
       return '-1';
@@ -132,7 +132,6 @@ class CustomButtonListState extends State<CustomButtonList> {
   void handleButtonTapped(int tag) {
     print("您正在点击第" + tag.toString() + "个button");
     oneLogin(tag).then((message) {
-      print('oneLogin message: ' + message);
       if (message == '0') {
         print("预取号失败");
       } else if (message == '1') {
@@ -141,6 +140,7 @@ class CustomButtonListState extends State<CustomButtonList> {
         print("获取手机号失败");
       }
     }).catchError((error) {
+      print("失败:"+error.message);
       switch (error.code) {
         case '0':
           print("预取号失败:"+error.message);

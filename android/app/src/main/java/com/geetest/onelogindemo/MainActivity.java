@@ -17,7 +17,7 @@ public class MainActivity extends FlutterActivity {
 
 
   //桢数据回传方法名
-  private static final String REQUEST = "request";
+  private static final String REQUEST = "oneLogin";
 
   private OneLoginUtils oneLoginUtils;
 
